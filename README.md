@@ -19,7 +19,7 @@ uts_[60324020]/
 └── database_backup.sql
 
 ### Cara Instalasi
-1. Clone repository ini ke folder `www` Laragon.
+1. Clone repository ke folder `www` Laragon.
 2. Import file `database_backup.sql` ke MySQL melalui phpMyAdmin.
 3. Sesuaikan konfigurasi database di `config/database.php`.
 4. Akses melalui browser di `localhost/uts_perpus/`.

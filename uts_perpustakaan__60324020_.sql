@@ -1,31 +1,9 @@
--- phpMyAdmin SQL Dump
--- version 5.2.2
--- https://www.phpmyadmin.net/
---
--- Host: localhost:3306
--- Generation Time: May 04, 2026 at 03:17 PM
--- Server version: 8.4.3
--- PHP Version: 8.3.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `uts_perpustakaan_[60324020]`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `kategori`
---
 
 CREATE TABLE `kategori` (
   `id_kategori` int NOT NULL,
@@ -36,9 +14,6 @@ CREATE TABLE `kategori` (
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `kategori`
---
 
 INSERT INTO `kategori` (`id_kategori`, `kode_kategori`, `nama_kategori`, `deskripsi`, `status`, `created_at`) VALUES
 (1, 'KAT-001', 'Pemrograman', 'Buku-buku tentang bahasa pemrograman', 'Aktif', '2026-05-04 13:49:32'),
@@ -46,24 +21,11 @@ INSERT INTO `kategori` (`id_kategori`, `kode_kategori`, `nama_kategori`, `deskri
 (3, 'KAT-003', 'Jaringan', 'Buku-buku tentang jaringan komputer', 'Aktif', '2026-05-04 13:49:32'),
 (4, 'KAT-005', 'Dasar Desain', 'Untuk Pemula', 'Aktif', '2026-05-04 15:06:22');
 
---
--- Indexes for dumped tables
---
 
---
--- Indexes for table `kategori`
---
 ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id_kategori`),
   ADD UNIQUE KEY `kode_kategori` (`kode_kategori`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `kategori`
---
 ALTER TABLE `kategori`
   MODIFY `id_kategori` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
